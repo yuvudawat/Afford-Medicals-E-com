@@ -7,7 +7,7 @@ const AllProducts = () => {
     const [selectedCategory, setSelectedCategory] = useState('');
 
     useEffect(() => {
-        const token = "your_token_here";
+        const token = "process.env.REACT_APP_TOKEN";
 
         const fetchData = async () => {
             try {
